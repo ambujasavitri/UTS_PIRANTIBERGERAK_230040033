@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imgBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_japan" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@drawable/bg_bottom"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="はじめよう!"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#EC407A"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIHONGO COURSE"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#111111"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kelola nilai siswa dengan mudah\n dan modern."
+            android:textSize="14sp"
+            android:textColor="#777777"
+            android:textAlignment="center"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnInput"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Input Nilai"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#EC407A"
+            app:cornerRadius="12dp"
+            android:elevation="4dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnData"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Data Siswa"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="#EC407A"
+            android:textSize="16sp"
+            android:layout_marginTop="14dp"
+            app:strokeColor="#EC407A"
+            app:strokeWidth="2dp"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

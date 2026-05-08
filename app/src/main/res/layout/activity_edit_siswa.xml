@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_form"
+            android:padding="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Data Siswa"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#111111"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama siswa"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginTop="28dp"/>
+
+            <EditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/input_modern"
+                android:paddingHorizontal="16dp"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grade"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <Spinner
+                android:id="@+id/spGrade"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speaking"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/etSpeaking"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="number"
+                android:background="@drawable/input_modern"
+                android:paddingHorizontal="16dp"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listening"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/etListening"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="number"
+                android:background="@drawable/input_modern"
+                android:paddingHorizontal="16dp"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Writing"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/etWriting"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:inputType="number"
+                android:background="@drawable/input_modern"
+                android:paddingHorizontal="16dp"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Simpan Nilai"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginTop="32dp"
+                app:backgroundTint="#EC407A"
+                app:cornerRadius="12dp"
+                android:elevation="4dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDelete"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Hapus "
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="#EC407A"
+                android:textSize="16sp"
+                android:layout_marginTop="14dp"
+                app:strokeColor="#EC407A"
+                app:strokeWidth="2dp"
+                app:cornerRadius="12dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
